@@ -1,0 +1,211 @@
+HTMl:
+
+
+<!-- Chatbot Container -->
+<div class="Chat10 chatbot-container">
+    <div class="chatbot-header">
+        <span>Elite Auctions Bot</span>
+        <button class="chatbot-close">&times;</button>
+    </div>
+    <div class="chatbot-body">
+        <div class="chatbot-messages">
+            <div class="bot-message">Hello! How can I assist you with furniture auctions today?</div>
+        </div>
+    </div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbot-input-field" placeholder="Type your message..." />
+        <button id="chatbot-send-btn">Send</button>
+    </div>
+</div>
+
+<!-- Chatbot Toggle Button -->
+<button class="Chat10 chatbot-toggle">Chat</button>
+
+<!-- JavaScript -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const chatbotContainer = document.querySelector(".chatbot-container");
+    const chatbotToggle = document.querySelector(".chatbot-toggle");
+    const chatbotClose = document.querySelector(".chatbot-close");
+    const chatbotInput = document.getElementById("chatbot-input-field");
+    const chatbotSendBtn = document.getElementById("chatbot-send-btn");
+    const chatbotMessages = document.querySelector(".chatbot-messages");
+
+    // Toggle chatbot visibility
+    chatbotToggle.addEventListener("click", () => chatbotContainer.style.display = "block");
+    chatbotClose.addEventListener("click", () => chatbotContainer.style.display = "none");
+
+    // Basic responses
+    const responses = {
+        "hello": "Hello! How can I assist you with today?",
+        "how does the auction work": "Our auctions allow users to bid on furniture. The highest bid at the end wins the item.",
+        "do you offer delivery": "Yes! We offer delivery services for auctioned furniture. Fees may apply based on location.",
+        "what payment methods do you accept": "We accept credit/debit cards, PayPal, and bank transfers.",
+        "bye": "Goodbye! Feel free to return anytime if you have more questions."
+    };
+
+    // Function to handle messages
+    function sendMessage() {
+        const userMessage = chatbotInput.value.trim().toLowerCase();
+        if (userMessage === "") return;
+
+        // Display user message
+        chatbotMessages.innerHTML += `<div class="user-message">${userMessage}</div>`;
+        chatbotInput.value = "";
+
+        // Display bot response
+        setTimeout(() => {
+            const botResponse = responses[userMessage] || "I'm not sure about that. Can you ask something related to furniture auctions?";
+            chatbotMessages.innerHTML += `<div class="bot-message">${botResponse}</div>`;
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }, 500);
+    }
+
+    // Send message on button click or Enter key press
+    chatbotSendBtn.addEventListener("click", sendMessage);
+    chatbotInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+    });
+
+    // Make chatbot draggable
+    chatbotContainer.addEventListener("mousedown", (event) => {
+        let shiftX = event.clientX - chatbotContainer.getBoundingClientRect().left;
+        let shiftY = event.clientY - chatbotContainer.getBoundingClientRect().top;
+
+        function moveAt(pageX, pageY) {
+            chatbotContainer.style.left = pageX - shiftX + "px";
+            chatbotContainer.style.top = pageY - shiftY + "px";
+        }
+
+        function onMouseMove(event) {
+            moveAt(event.pageX, event.pageY);
+        }
+
+        document.addEventListener("mousemove", onMouseMove);
+        document.addEventListener("mouseup", () => document.removeEventListener("mousemove", onMouseMove), { once: true });
+    });
+
+    chatbotContainer.ondragstart = () => false;
+});
+</script>
+
+
+
+/* ========================================
+   CSS Styling For Bot
+   ======================================== /*
+/* Chatbot Container */
+.Chat10{
+    --primary: #2c3e50;
+    --secondary: #e67e22;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    cursor: grab;
+}
+
+/* Chatbot Header */
+ .chatbot-header {
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    cursor: move;
+}
+
+ .chatbot-close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Chatbot Body */
+ .chatbot-body {
+    padding: 10px;
+    height: 250px;
+    overflow-y: auto;
+    background: var(--light);
+}
+
+/* Chat Messages */
+ .bot-message, .Chat10 .user-message {
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+ .bot-message {
+    background: var(--secondary);
+    color: white;
+    align-self: flex-start;
+}
+
+ .user-message {
+    background: var(--primary);
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Chatbot Input */
+ .chatbot-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    background: white;
+}
+
+ .chatbot-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+ .chatbot-input button {
+    background: var(--secondary);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Chatbot Toggle Button */
+ .chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--secondary);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
