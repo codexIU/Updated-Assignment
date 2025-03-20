@@ -93,33 +93,53 @@
     border-bottom: 2px solid var(--secondary);
     color: var(--secondary);
 }
-/*faq secition  */
+/* Terms Section  */
+.terms-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    transition: all 0.3s ease-in-out;
+}
 
-.terms-container {
-    max-width: 800px; 
-    margin: 50px auto; 
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.terms-section:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .terms-section h2 {
     text-align: center;
     font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
     margin-bottom: 20px;
+    border-bottom: 2px solid #e67e22;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .terms-section h3 {
-    margin-top: 20px;
-    font-size: 22px;
+    font-size: 20px;
+    color:#2c3e50;
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 .terms-section p {
     font-size: 16px;
-    line-height: 1.6;
-    color: #333;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
+
+.terms-section strong {
+    color: #2980b9;
+    font-weight: 600;
+}
+
+
 
 /* end */
         /* Footer */
@@ -171,7 +191,7 @@
     </style>
 </head>
 <body>
-    <!-- Header (Same as Contact Page) -->
+    <!-- Header (Same as Contact Page Xd) -->
     <header>
         <div class="container">
             <div class="header-top">
@@ -195,41 +215,48 @@
         </div>
     </header>
 
-    <!-- Terms & Conditions Content -->
+    <!-- Disclaimer Content -->
     <main>
-        <div class="terms-container">
-            <div class="terms-section">
+        <div class="container">
+            <section class="terms-section">
                 <h2>Terms & Conditions</h2>
                 <p>
-                    Welcome to Elite Auctions! By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.
+                    Welcome to <strong>Elite Auctions!</strong> By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.
                 </p>
+    
                 <h3>1. Eligibility</h3>
                 <p>
-                    To participate in our auctions, you must be at least 18 years old and have the legal capacity to enter into a binding contract. By registering, you confirm that you meet these requirements.
+                    To participate in our auctions, you must be at least <strong>18 years old</strong> and have the legal capacity to enter into a binding contract. By registering, you confirm that you meet these requirements.
                 </p>
+    
                 <h3>2. Bidding Process</h3>
                 <p>
-                    All bids placed on Elite Auctions are binding and cannot be retracted. By placing a bid, you agree to purchase the item at the bid price if you are the winning bidder.
+                    All bids placed on <strong>Elite Auctions</strong> are <strong>binding</strong> and cannot be retracted. By placing a bid, you agree to purchase the item at the bid price if you are the winning bidder.
                 </p>
+    
                 <h3>3. Payment</h3>
                 <p>
-                    Winning bidders are required to make payment within 48 hours of the auction's conclusion. We accept credit/debit cards, PayPal, and bank transfers. Failure to pay may result in penalties or account suspension.
+                    Winning bidders must complete payment within <strong>48 hours</strong> of the auction's conclusion. We accept <strong>credit/debit cards</strong> and <strong>bank transfers.</strong> Failure to pay may result in penalties or account suspension.
                 </p>
+    
                 <h3>4. Delivery</h3>
                 <p>
-                    Delivery times and fees vary depending on the item and location. Elite Auctions is not responsible for delays caused by third-party delivery services.
+                    Delivery times and fees vary depending on the item and location. <strong>Elite Auctions</strong> is not responsible for delays caused by third-party delivery services.
                 </p>
+    
                 <h3>5. Disputes</h3>
                 <p>
-                    Any disputes arising from the use of this website or participation in auctions will be resolved through arbitration in accordance with the laws of [Your Country/State].
+                    Any disputes arising from the use of this website or participation in auctions will be resolved through <strong>arbitration</strong> in accordance with the laws of <strong>[Your Provinve/City].</strong>
                 </p>
+    
                 <h3>6. Changes to Terms</h3>
                 <p>
-                    Elite Auctions reserves the right to modify these terms and conditions at any time. Continued use of the website constitutes acceptance of the updated terms.
+                    <strong>Elite Auctions</strong> reserves the right to modify these terms and conditions at any time. Continued use of the website constitutes acceptance of the updated terms.
                 </p>
-            </div>
+            </section>
         </div>
     </main>
+    
     
 
     <!-- Footer (Same as Contact Page) -->
@@ -277,4 +304,5 @@
         </div>
     </footer>
 </body>
+
 </html>
