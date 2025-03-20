@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FAQ | Elite Auctions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+   
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header styles */
+ header {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 0;
+}
+
+ .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+ .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+ .logo span {
+    color: var(--secondary);
+}
+
+.user-actions a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.user-actions a:hover {
+    color: var(--secondary);
+}
+
+ .primary-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+ .primary-nav li {
+    margin-right: 20px;
+}
+
+ .primary-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+ .primary-nav a:hover,
+ .primary-nav a.active {
+    border-bottom: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+/* FAQ Section */
+.faq-section {
+    background-color: #2c3e50; /* Same as header/footer */
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Heading */
+.faq-section h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+/* Items */
+.faq-item {
+    background-color: #34495e; /* Darker navy to differentiate */
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.faq-item:hover {
+    background-color: #3b5770; /* Slightly lighter for effect */
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*  Question */
+.faq-question {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e67e22;
+}
+
+/* Answer */
+.faq-answer {
+    font-size: 16px;
+    color: #d3d3d3;
+    margin-top: 5px;
+}
+
+/* Links */
+.faq-item a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+/* end */
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: var(--light);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--secondary);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (Same as Contact Page Xd) -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="#" class="logo">Elite<span>Auctions</span></a>
+                <div class="user-actions">
+                    <a href="sign.html">Sign In</a>
+                    <a href="#">Register</a>
+                    <a href="#">My Bids</a>
+                </div>
+            </div>
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Live Auctions</a></li>
+                    <li><a href="#">Upcoming Auctions</a></li>
+                    <li><a href="#">Completed Auctions</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+  <!-- FAQ Content -->
+  <main>
+    <div class="container">
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">How do I place a bid?</div>
+                <div class="faq-answer">
+                    To place a bid, simply navigate to the live auction page, select the item you're interested in, and enter your bid amount. Make sure you're logged in to your account.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What payment methods do you accept?</div>
+                <div class="faq-answer">
+                    We accept credit/debit cards, PayPal, and bank transfers. All transactions are secure and encrypted.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer delivery services?</div>
+                <div class="faq-answer">
+                    Yes, we offer delivery services for auctioned items. Delivery fees may apply depending on the item size and location.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I cancel a bid?</div>
+                <div class="faq-answer">
+                    Bids are binding and cannot be canceled once placed. Please review your bid carefully before submitting.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do I contact customer support?</div>
+                <div class="faq-answer">
+                    You can reach our customer support team via the <a href="contact.html">Contact Us</a> page or by emailing support@eliteauctions.com.
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    
+    
+    
+
+    <!-- Footer (Same as Contact Page) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>With 25 years of experience in the auction industry, EliteAuctions is proud to bring our expertise to the digital world.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Live Auctions</a></li>
+                        <li><a href="#">Completed Auctions</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Paintings</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Decorative Arts</a></li>
+                        <li><a href="#">All Categories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 EliteAuctions. All rights reserved. 25 years of excellence in auction services.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
