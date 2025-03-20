@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | Elite Auctions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+   
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header styles */
+ header {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 0;
+}
+
+ .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+ .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+ .logo span {
+    color: var(--secondary);
+}
+
+.user-actions a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.user-actions a:hover {
+    color: var(--secondary);
+}
+
+ .primary-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+ .primary-nav li {
+    margin-right: 20px;
+}
+
+ .primary-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+ .primary-nav a:hover,
+ .primary-nav a.active {
+    border-bottom: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+/*faq secition  */
+
+.terms-container {
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.terms-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.terms-section h3 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.terms-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* end */
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: var(--light);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--secondary);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (Same as Contact Page) -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="#" class="logo">Elite<span>Auctions</span></a>
+                <div class="user-actions">
+                    <a href="sign.html">Sign In</a>
+                    <a href="#">Register</a>
+                    <a href="#">My Bids</a>
+                </div>
+            </div>
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Live Auctions</a></li>
+                    <li><a href="#">Upcoming Auctions</a></li>
+                    <li><a href="#">Completed Auctions</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Terms & Conditions Content -->
+    <main>
+        <div class="terms-container">
+            <div class="terms-section">
+                <h2>Terms & Conditions</h2>
+                <p>
+                    Welcome to Elite Auctions! By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.
+                </p>
+                <h3>1. Eligibility</h3>
+                <p>
+                    To participate in our auctions, you must be at least 18 years old and have the legal capacity to enter into a binding contract. By registering, you confirm that you meet these requirements.
+                </p>
+                <h3>2. Bidding Process</h3>
+                <p>
+                    All bids placed on Elite Auctions are binding and cannot be retracted. By placing a bid, you agree to purchase the item at the bid price if you are the winning bidder.
+                </p>
+                <h3>3. Payment</h3>
+                <p>
+                    Winning bidders are required to make payment within 48 hours of the auction's conclusion. We accept credit/debit cards, PayPal, and bank transfers. Failure to pay may result in penalties or account suspension.
+                </p>
+                <h3>4. Delivery</h3>
+                <p>
+                    Delivery times and fees vary depending on the item and location. Elite Auctions is not responsible for delays caused by third-party delivery services.
+                </p>
+                <h3>5. Disputes</h3>
+                <p>
+                    Any disputes arising from the use of this website or participation in auctions will be resolved through arbitration in accordance with the laws of [Your Country/State].
+                </p>
+                <h3>6. Changes to Terms</h3>
+                <p>
+                    Elite Auctions reserves the right to modify these terms and conditions at any time. Continued use of the website constitutes acceptance of the updated terms.
+                </p>
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- Footer (Same as Contact Page) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>With 25 years of experience in the auction industry, EliteAuctions is proud to bring our expertise to the digital world.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Live Auctions</a></li>
+                        <li><a href="#">Completed Auctions</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Paintings</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Decorative Arts</a></li>
+                        <li><a href="#">All Categories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 EliteAuctions. All rights reserved. 25 years of excellence in auction services.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
